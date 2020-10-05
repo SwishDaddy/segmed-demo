@@ -17,7 +17,7 @@ This code allows a User to search through a number of .txt files for a search te
 ### See it Live! in action...
 https://work-samples.swishersolutions.com/demos/segmed
 
-### Try it out
+### Installation
 If you want to download this code and get it up and running in your own environment, you'll need to know a few things.
 - This project is web-based, and therefore requires a web server. I use an AWS EC2 UBUNTU server running NGINX as the web server.
 - The web server must run PHP 7.2 (or greater). 
