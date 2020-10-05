@@ -31,6 +31,7 @@ I know I didn't build this ***exactly*** as described in the requirements doc, b
 - I handled Active and Inactive tags a little differently. Seems to me that we only want to see Active tags in the Search Results. When viewing a given file in the File Display window, we can see all the tags, active and inactive. Here we can add and delete available tags, and assign them to the given report.
 - I didn't quite understand how you wanted the key binding to work, so I didn't put any in. If you can elucidate that a bit for me, I can add it in.
 - I needed some dummy data text files... here's where I got them: http://www.textfiles.com/fun/. There are 216 of them, on all kinds of interesting topics.
+- i did not use a databse, but there are 2 .json files. One ***(file_meta.json)*** has descriptions for the files, and the other ***(tags.json)*** is where all the tag information is stored.
 
 ### Contact
 Author: **Mike Swisher** *https://work-samples.swishersolutions.com*
