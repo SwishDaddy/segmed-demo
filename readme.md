@@ -22,6 +22,7 @@ If you want to download this code and get it up and running in your own environm
 - This project is web-based, and therefore requires a web server. I use an AWS EC2 UBUNTU server running NGINX as the web server.
 - The web server must run PHP 7.2 (or greater). 
 - **IMPORTANT** Make sure to set the Default Document to "index.php" in your web server! Otherwise you'll get a 404 or some other error.
+- Be sure that your web user has read and write access to all files, but especially *tags.json*.
 
 ### Notes
 I know I didn't build this ***exactly*** as described in the requirements doc, but I think that what I have created meets all the requirements, and is a pretty user-friendly tool!
@@ -31,7 +32,9 @@ I know I didn't build this ***exactly*** as described in the requirements doc, b
 - I handled Active and Inactive tags a little differently. Seems to me that we only want to see Active tags in the Search Results. When viewing a given file in the File Display window, we can see all the tags, active and inactive. Here we can add and delete available tags, and assign them to the given report.
 - I didn't quite understand how you wanted the key binding to work, so I didn't put any in. If you can elucidate that a bit for me, I can add it in.
 - I needed some dummy data text files... here's where I got them: http://www.textfiles.com/fun/. There are 216 of them, on all kinds of interesting topics.
-- i did not use a databse, but there are 2 .json files. One ***(file_meta.json)*** has descriptions for the files, and the other ***(tags.json)*** is where all the tag information is stored.
+- I did not use a databse, but there are 2 .json files. One ***(file_meta.json)*** has descriptions for the files, and the other ***(tags.json)*** is where all the tag information is stored.
+- All the frontend code is pure vanilla Javascript (whew!)... jQuery is included *only* for Bootstrap. No other libraries or frameworks are used.
+- All the backend code is good ol' fashioned PHP. :)
 
 ### Contact
 Author: **Mike Swisher** *https://work-samples.swishersolutions.com*
