@@ -13,8 +13,6 @@ This code allows a User to search through a number of .txt files for a search te
 - In the File Display window, Users can create and delete tags, whatever they want them to be. Clicking on a tag will assign or remove it from the active file, depending on whether it was already assigned or not (**toggle**). Active tags are red, inactive tags are gray.
 - Tags assigned to a given file will be displayed on the Search Screen in the Search Results. Only assigned ("active") tags are displayed.
 
-### File Source
-I needed some dummy data text files... here's where I got them: http://www.textfiles.com/fun/
 
 ### See it Live! in action...
 https://work-samples.swishersolutions.com/demos/segmed
@@ -24,6 +22,15 @@ If you want to download this code and get it up and running in your own environm
 - This project is web-based, and therefore requires a web server. I use an AWS EC2 UBUNTU server running NGINX as the web server.
 - The web server must run PHP 7.2 (or greater). 
 - **IMPORTANT** Make sure to set the Default Document to "index.php" in your web server! Otherwise you'll get a 404 or some other error.
+
+### Notes
+I know I didn't build this ***exactly*** as described in the requirements doc, but I think that what I have created meets all the requirements, and is a pretty user-friendly tool!
+- One of the requirements was showing the first sentence in bold, then the other sentences. The files I used have title and other information in the first lines, and there is no dependable way to determine where a sentence ends (i.e "Joe and Mr. Smith were friends."... where does that sentence end? Can't say on the first full-stop (period)!). So instead, I chose to show the line(s) where the Search Term appears in the file.
+- I decided to forgo adding drag and drop functionality for tags, as I think I've created a better interface for managing them, and that is more in line with how (my) GMail interface for tags works. Plus, drag and drop with pure vanilla Javascript is a real pain! ;)
+- I decided to forgo adding Next/Prev buttons in the Search Results as they seemed redundant. If you really want them, I can add them.
+- I handled Active and Inactive tags a little differently. Seems to me that we only want to see Active tags in the Search Results. When viewing a given file in the File Display window, we can see all the tags, active and inactive. Here we can add and delete available tags, and assign them to the given report.
+- I didn't quite understand how you wanted the key binding to work, so I didn't put any in. If you can elucidate that a bit for me, I can add it in.
+- I needed some dummy data text files... here's where I got them: http://www.textfiles.com/fun/. There are 216 of them, on all kinds of interesting topics.
 
 ### Contact
 Author: **Mike Swisher** *https://work-samples.swishersolutions.com*
