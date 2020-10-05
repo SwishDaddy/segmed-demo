@@ -1,8 +1,8 @@
-##Text Mining Demo for Segmed
+## Text Mining Demo for Segmed
 
-#Oct 2020
+# Oct 2020
 
-#Author: Mike Swisher
+# Author: Mike Swisher
 mike@swishersolutions.com
  
 
