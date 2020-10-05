@@ -1,5 +1,4 @@
 # Text Mining Demo for Segmed
-
 ### Oct 2020
 
 ## Author: Mike Swisher
